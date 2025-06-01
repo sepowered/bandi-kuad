@@ -1,0 +1,294 @@
+/*font*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Pretendard', sans-serif;
+  background: linear-gradient(180deg, #FFFAC0 0%, #FFFDE3 21.55%);
+}
+
+//text styles
+.subtitle {
+  color: #98BC00;
+  text-align: center;
+  font-family: "Wanted Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.title {
+  text-align: center;
+  color: #483000;
+  font-family: Pretendard;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+//style ends
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  .section-1__header {
+    text-align: center;
+    font-family: "Paytone One";
+    font-size: 18rem;
+    line-height: 90%;
+    background: linear-gradient(180deg, rgba(220, 157, 30, 0.39) 13.05%, rgba(255, 252, 218, 0.39) 112.26%);
+    background: linear-gradient(180deg, #B9E057 0%, rgba(185, 224, 87, 0.14) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-1__mockup {
+    position: relative;
+    top: -2rem;
+    z-index: 1;
+  }
+
+  .section-1__character {
+    position: absolute;
+    z-index: 2;
+
+    &:nth-of-type(1) {
+      transform: rotate(-9.5deg);
+      left: 20%;
+      top: 40%;
+      transform-origin: right center;
+    }
+
+    &:nth-of-type(2) {
+      transform: rotate(14deg);
+      right: 20%;
+      bottom: 15%;
+      transform-origin: left center;
+    }
+  }
+
+  .section-1__cloud {
+    position: absolute;
+    bottom: 0;
+
+    &:nth-of-type(1) {
+      z-index: -1;
+      left: -2%;
+    }
+
+    &:nth-of-type(2) {
+      z-index: -2;
+      left: 0;
+    }
+
+    &:nth-of-type(3) {
+      right: 0;
+
+    }
+
+    &:nth-of-type(4) {
+      right: -2%;
+      bottom: -2%;
+    }
+  }
+
+  .curved-section {
+    position: absolute;
+    left: -10vw;
+    right: 0;
+    bottom: 0;
+    width: 120vw;
+    height: 30rem;
+    margin: 0;
+    background-color: black;
+    clip-path: ellipse(50% 50% at 50% 100%);
+    z-index: 1;
+  }
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30rem;
+
+  .section-2__texts {
+    display: flex;
+    flex-direction: column;
+
+    .section-2__subtitle {
+      padding-bottom: 2.5rem;
+    }
+
+    .section-2__title {
+      padding-bottom: 4rem;
+    }
+
+    .section-2__desc {
+      text-align: center;
+    }
+  }
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(48, 35, 0, 0.85), rgba(48, 35, 0, 0.85)),
+  url("../src/img/section-4-bg.png") no-repeat center center / cover;
+
+  font-size: 4rem;
+
+  .section-4__header--text {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-4__desc {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
+
+section.vertical {
+  display: flex;
+  padding: 8rem;
+  /*justify-content: center;*/
+  //align-items: center;
+  //height: 100vh;
+  /*background: linear-gradient(180deg, #FFFAC0 0%, #FFFDE3 21.55%);*/
+}
+
+#horizon {
+  position: relative;
+  height: 100vh;
+}
+
+.horizon-wrap {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  will-change: transform;
+}
+
+.panel {
+  flex: 0 0 100vw;
+  height: 100vh;
+  background-color: #FFFAC0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 30rem;
+  background: #2C2E26;
+  color: white;
+  padding: 7.4rem;
+  font-size: 2rem;
+  justify-content: space-between;
+
+  .footer1 {
+    font-weight: 600;
+
+    .footer1__symbol {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1.75rem;
+
+      .footer1__symbol--symbol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 30%;
+        background-color: #A6C753;
+
+        img {
+          width: 60%;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+    }
+
+    span {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+  }
+
+  .footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .footer__team {
+      font-weight: 600;
+    }
+
+    .footer__members {
+      display: flex;
+      gap: 4rem;
+
+      .footer__member {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        .footer__member--position {
+          font-size: 1.5rem;
+        }
+
+        .footer__member--name {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .topbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #D0F475;
+    border-radius: 50%;
+  }
+}

@@ -1,20 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/style.scss">
 </head>
 <body>
-<section class="vertical">section 1</section>
-<section id="horizon">
-  <div class="horizon-wrap">
-    <div class="panel">panel 1</div>
-    <div class="panel">panel 2</div>
-    <div class="panel">panel 3</div>
-  </div>
+<div class="nav">
+    <div class="nav__symbol"></div>
+    <div class="nav__items"></div>
+</div>
+<section class="section-1 vertical">
+    <div class="section-1__header">
+        Bandi
+    </div>
+    <img class="section-1__character" src="./src/img/bandi_character_hoi.png" alt="">
+    <img class="section-1__character" src="./src/img/bandi_character_seat.png" alt="">
+    <img class="section-1__mockup" src="./src/img/section-1-mockup.png" alt="">
+    <svg class="section-1__cloud" xmlns="http://www.w3.org/2000/svg" width="389" height="396" viewBox="0 0 389 396"
+         fill="none">
+        <path d="M-66.5293 0C69.3707 -4.38884e-06 161.21 90.0124 179.54 192.491C182.993 211.796 182.086 230.1 177.538 247.186C197.974 238.242 221.534 233.144 246.615 233.144C324.866 233.144 388.302 282.767 388.302 343.979C388.302 404.149 327.011 453.118 250.604 454.771L250.618 454.815H-251.775C-285.366 454.815 -312.597 427.585 -312.598 393.994V179.406L-312.045 179.495C-303.501 79.2459 -196.846 0.000169081 -66.5293 0Z"
+              fill="url(#paint0_linear_1897_25447)"/>
+        <defs>
+            <linearGradient id="paint0_linear_1897_25447" x1="37.8521" y1="0" x2="37.8521" y2="454.816"
+                            gradientUnits="userSpaceOnUse">
+                <stop stop-color="#B9E057"/>
+                <stop offset="1" stop-color="#B9E057" stop-opacity="0.08"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <svg class="section-1__cloud" xmlns="http://www.w3.org/2000/svg" width="633" height="392" viewBox="0 0 633 392"
+         fill="none">
+        <path d="M212.577 0.545532C366.865 0.545527 471.737 87.2027 494.568 186.768C571.17 189.491 632.095 234.275 632.095 289.122C632.095 345.723 567.21 391.607 487.172 391.607C458.442 391.607 431.664 385.694 409.139 375.497L412.681 389.337H41.6484C-3.22127 389.337 -39.8767 354.165 -42.2529 309.888C-52.3288 311.553 -62.7217 312.426 -73.3457 312.426C-165.986 312.426 -241.086 246.218 -241.086 164.545C-241.086 82.8717 -165.986 16.6627 -73.3457 16.6627C-35.3147 16.6628 -0.241082 27.823 27.8955 46.6285C77.4439 17.912 141.99 0.545549 212.577 0.545532Z"
+              fill="url(#paint0_linear_1897_25442)"/>
+        <defs>
+            <linearGradient id="paint0_linear_1897_25442" x1="195.504" y1="0.545532" x2="195.504" y2="391.607"
+                            gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CFED80"/>
+                <stop offset="1" stop-color="#CFED80" stop-opacity="0.05"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <svg class="section-1__cloud" xmlns="http://www.w3.org/2000/svg" width="587" height="295" viewBox="0 0 587 295"
+         fill="none">
+        <path d="M109.783 102.463C143.848 35.2792 227.583 -13.7264 325.758 3.46041C370.674 11.3234 408.337 30.6763 434.231 56.3061C455.825 46.2699 480.334 42.3615 504.535 46.5981C563.483 56.918 598.279 111.652 582.253 168.849C566.227 226.046 505.448 264.048 446.5 253.728C439.741 252.545 433.3 250.775 427.216 248.488C416.974 279.2 383.875 299.268 351.792 293.652L122.141 253.449L127.11 244.151C110.776 248.783 92.5762 249.941 74.2944 246.741C23.3645 237.825 -8.9192 198.463 2.18702 158.825C12.9492 120.414 60.505 95.8371 109.783 102.463Z"
+              fill="url(#paint0_linear_1897_25434)"/>
+        <defs>
+            <linearGradient id="paint0_linear_1897_25434" x1="293.078" y1="0.000244141" x2="293.078" y2="294.594"
+                            gradientUnits="userSpaceOnUse">
+                <stop stop-color="#CFED80"/>
+                <stop offset="1" stop-color="#CFED80" stop-opacity="0"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <svg class="section-1__cloud" xmlns="http://www.w3.org/2000/svg" width="395" height="375" viewBox="0 0 395 375"
+         fill="none">
+        <path d="M169.185 107.287C235.914 24.0946 356.779 -26.3156 468.481 14.3457C580.182 55.007 627.287 162.543 573.692 254.535C524.696 338.632 408.505 380.624 303.583 356.147C302.958 372.545 298.217 389.187 288.935 405.119C252.963 466.862 162.417 494.57 86.6945 467.006C10.972 439.442 -21.2521 367.043 14.7199 305.3C39.8289 262.202 91.5279 235.689 146.215 232.979C131.307 192.948 136.05 148.597 169.185 107.287Z"
+              fill="url(#paint0_linear_1897_25439)"/>
+        <defs>
+            <linearGradient id="paint0_linear_1897_25439" x1="297.91" y1="0" x2="297.91" y2="477.671"
+                            gradientUnits="userSpaceOnUse">
+                <stop stop-color="#B9E057"/>
+                <stop offset="1" stop-color="#B9E057" stop-opacity="0.14"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    <div class="curved-section"></div>
 </section>
-<section class="vertical">section 2</section>
+<section class="section-2 vertical">
+    <div class="section-2__texts">
+        <div class="subtitle section-2__subtitle">Overview</div>
+        <div class="title section-2__title">
+            <div class="section-2__title--text">글의 힘으로 내가 알던</div>
+            <div class="section-2__title--text">세상이 보다 넓어질 수 있지 않을까?</div>
+        </div>
+        <div class="desc section-2__desc">
+            <div class="section-2__desc--text">bandi는 사용자가 글을 쓰는 것에 대한 흥미를 가지도록 돕고</div>
+            <div class="section-2__desc--text">학습을 통한 문해력 향상을 도와 주는 서비스 입니다.</div>
+        </div>
+    </div>
+    <div class="section-2__texts">
+        <div class="subtitle section-2__subtitle">IN</div>
+        <div class="title section-2__title">
+            <div class="section-2__title--text">10명 중 N명은 문해력 부족으로 인해</div>
+            <div class="section-2__title--text">일상생활에 어려움을 느끼고 있어요</div>
+        </div>
+    </div>
+</section>
+<section class="section-3 vertical">
+</section>
+<section class="section-4 vertical">
+    <div class="section-4__header">
+        <div class="section-4__header--text">"</div>
+        <div class="section-4__header--text">잘 읽는 가장 좋은 방법은</div>
+        <div class="section-4__header--inner">
+            <div class="section-4__header--text">잘 쓰는</div>
+            <div class="section-4__header--text">것이에요.</div>
+        </div>
+        <div class="section-4__header--text">"</div>
+    </div>
+    <div class="section-4__desc">
+        현대 사회에서는 변화에 적응하고 성장하기 위해 디지털 리터러시와<br>
+        비판적 사고력을 바탕으로 지속적인 학습과 유연한 사고가 필요합니다.
+    </div>
+</section>
+<section id="horizon">
+    <div class="horizon-wrap">
+        <div class="panel">panel 1</div>
+        <div class="panel">panel 2</div>
+        <div class="panel">panel 3</div>
+    </div>
+</section>
+<section class="vertical footer">
+    <div class="footer1">
+        <div class="footer1__symbol">
+            <div class="footer1__symbol--symbol">
+                <img src="./src/img/bandi_symbol.png" alt="">
+            </div>
+            <span>Bandi</span>
+        </div>
+        <span>당신의 글이 빛날때까지, Bandi.</span>
+    </div>
+    <div class="footer2">
+        <div class="footer__team">
+            Epilogue :
+        </div>
+        <div class="footer__members">
+            <div class="footer__member">
+                <div class="footer__member--position">Product Manager</div>
+                <div class="footer__member--name">노권후</div>
+            </div>
+            <div class="footer__member">
+                <div class="footer__member--position">UX/UI Designer</div>
+                <div class="footer__member--name">강재연</div>
+            </div>
+            <div class="footer__member">
+                <div class="footer__member--position">Motion Designer</div>
+                <div class="footer__member--name">김정아</div>
+            </div>
+        </div>
+    </div>
+    <div class="topbtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" viewBox="0 0 22 32" fill="none">
+            <path d="M12.4905 30.3203C12.4905 31.1435 11.8232 31.8108 11 31.8108C10.1768 31.8108 9.50948 31.1435 9.50948 30.3203L12.4905 30.3203ZM9.94604 0.946877C10.5281 0.36479 11.4719 0.36479 12.054 0.946876L21.5396 10.4325C22.1217 11.0146 22.1217 11.9583 21.5396 12.5404C20.9575 13.1225 20.0138 13.1225 19.4317 12.5404L11 4.10876L2.56832 12.5404C1.98623 13.1225 1.04249 13.1225 0.4604 12.5404C-0.121686 11.9584 -0.121686 11.0146 0.4604 10.4325L9.94604 0.946877ZM11 30.3203L9.50948 30.3203L9.50947 2.00084L11 2.00084L12.4905 2.00084L12.4905 30.3203L11 30.3203Z" fill="#233F00"/>
+        </svg>
+    </div>
+</section>
+</section>
 <script src="src/main.js"></script>
 </body>
 </html>
