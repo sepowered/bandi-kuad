@@ -36,6 +36,10 @@ body {
   text-align: center;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 //style ends
 
 .nav {
@@ -160,13 +164,27 @@ body {
   text-align: center;
   background: linear-gradient(rgba(48, 35, 0, 0.85), rgba(48, 35, 0, 0.85)),
   url("../src/img/section-4-bg.png") no-repeat center center / cover;
-
   font-size: 4rem;
 
   .section-4__header--text {
     color: white;
     display: flex;
     justify-content: center;
+    font-weight: 600;
+
+  }
+  .section-4__header--inner {
+    span {
+      color: white;
+    }
+    span:nth-child(1) {
+      display: inline-block;
+      background-color: #C3E633;
+      color: #483000;
+      padding: .5rem;
+      border-radius: .75rem;
+    }
+    font-weight: 600;
   }
 
   .section-4__desc {
@@ -244,6 +262,41 @@ body {
           font-weight: 500;
         }
       }
+    }
+  }
+}
+
+.section-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .section-6__subtitle {
+    padding-bottom: 1.5rem;
+  }
+  .section-6__title {
+    display: flex;
+    justify-content: center;
+    span:first-child {
+      color: #98BC00;
+    }
+  }
+}
+
+.section-7 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  .section-7__subtitle {
+    padding-bottom: 1.5rem;
+  }
+  .section-7__title {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    span:nth-child(2) {
+      padding-right: .75rem;
     }
   }
 }
