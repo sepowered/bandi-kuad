@@ -4,6 +4,7 @@
 @import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 body {
+  overflow-x: hidden;
   margin: 0;
   overflow-x: hidden;
   font-family: 'Pretendard', sans-serif;
@@ -153,7 +154,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30rem;
+
+
+
+    .section-2__parts {
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        padding-bottom: 30rem;
+      }
+      .section-2__graphic--bubble {
+        position: relative;
+        top: -4rem;
+        right: -86rem;
+      }
+      .section-2__graphic {
+        /*padding-top: 14rem;*/
+      }
+    }
 
     .section-2__texts {
       display: flex;
@@ -169,6 +188,26 @@ body {
 
       .section-2__desc {
         text-align: center;
+      }
+    }
+
+    .section-2__graphic {
+      display: flex;
+      align-items: flex-end;
+      gap: 4.2rem;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 4rem;
+      box-sizing: border-box;
+      
+      .section-2__graphic1 {
+        display: flex;
+        gap: 4.4rem;
+      }
+      .section-2__graphic2 {
+        display: flex;
+        gap: 4.4rem;
+        align-items: flex-end;
       }
     }
   }
@@ -337,6 +376,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24rem;
+
+    &:nth-child(2) {
+      justify-content: flex-start;
+      gap: 5.2rem;
+    }
+    &:nth-child(3) {
+      justify-content: flex-start;
+      padding-left: 29rem;
+    }
   }
 
   .section-15__texts {
@@ -370,12 +418,17 @@ body {
     position: relative;
     right: -8rem;
     padding-left: 6rem;
+    white-space: nowrap;
     img {
+      display: inline-block;
       padding-right: 2.4rem;
+    }
+    img:last-child {
+      width: 30%;
+      height: auto;
     }
   }
 }
-
 
 section.vertical {
   display: flex;
@@ -402,9 +455,9 @@ section.vertical {
 .panel {
   padding-top: 16rem;
   flex: 0 0 100vw;
-  height: 100vh;
-  background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
+  //height: 100vh;
   display: flex;
+  background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
 }
 
 .footer {
