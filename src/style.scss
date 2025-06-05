@@ -156,7 +156,6 @@ body {
     align-items: center;
 
 
-
     .section-2__parts {
       display: flex;
       flex-direction: column;
@@ -164,11 +163,13 @@ body {
       &:first-child {
         padding-bottom: 30rem;
       }
+
       .section-2__graphic--bubble {
         position: relative;
         top: -4rem;
         right: -86rem;
       }
+
       .section-2__graphic {
         /*padding-top: 14rem;*/
       }
@@ -199,11 +200,12 @@ body {
       width: 100%;
       padding: 0 4rem;
       box-sizing: border-box;
-      
+
       .section-2__graphic1 {
         display: flex;
         gap: 4.4rem;
       }
+
       .section-2__graphic2 {
         display: flex;
         gap: 4.4rem;
@@ -368,6 +370,167 @@ body {
   }
 }
 
+.section-8 {
+  .section-8__texts {
+    padding-bottom: 15.4rem;
+
+    .section-8__subtitle {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  .section-8__area {
+    display: flex;
+
+    .section-8__area1 {
+      display: flex;
+      background: #FFFCE0;
+      //height: 40rem;
+      flex: 1;
+      min-width: 0;
+      padding: 5.6rem 7.5rem;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .section-8__area1--title {
+        color: #98BC00;
+        font-family: "Wanted Sans";
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 1.2rem;
+      }
+
+      span {
+        color: #483000;
+        font-family: Pretendard;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.625rem; /* 175% */
+      }
+
+      .section-8__area11 {
+        display: flex;
+        align-items: flex-end;
+
+        .section-8__area11--icon {
+          width: 14rem;
+          height: 14rem;
+          background: #A6C753;
+          border-radius: 2rem;
+
+          img {
+            width: 60%;
+            height: auto;
+            position: relative;
+            top: 20%;
+            left: 20%;
+          }
+        }
+
+        span {
+          color: #A6C753;
+          font-family: "Paytone One";
+          font-size: 8.125rem;
+          font-weight: 400;
+          line-height: 100%;
+          padding: 0 0 .75rem 2.25rem;
+        }
+      }
+    }
+
+    .section-8__area2 {
+      background-image: url("../src/img/section-8.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 40rem;
+      flex: 1;
+      min-width: 0;
+    }
+  }
+}
+
+.section-9 {
+  background: linear-gradient(155deg, rgba(234, 253, 182, 0.54) 14.74%, rgba(253, 255, 243, 0.75) 87.8%);
+  padding: 12rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+
+  .section-9__area1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .section-9__area1--texts {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        span {
+          color: #483000;
+          font-family: Pretendard;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.625rem; /* 175% */
+        }
+      }
+
+      .section-9__subtitle {
+        padding-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      .section-9__title {
+        color: #483000;
+        font-family: Pretendard;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 120%;
+      }
+    }
+  }
+
+  .section-9__area2 {
+    display: flex;
+    gap: 2.6rem;
+    filter: drop-shadow(0px 0px 27.66px rgba(167, 174, 127, 0.20));
+
+    .section-9__card {
+      display: flex;
+      width: 28rem;
+      height: 30rem;
+      border-radius: 3.5rem;
+      background: rgba(255, 255, 250, 0.62);
+      justify-content: center;
+      align-items: center;
+
+      &:first-child {
+        img {
+          width: 70%;
+        }
+      }
+
+      &:last-child {
+        img {
+          width: 85%;
+        }
+      }
+    }
+  }
+
+}
+
+.section-10 {
+  padding: 9rem 8rem;
+  background: #EAFFB0;
+  .section-10__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
 .section-15 {
   padding: 14rem 0 0 14rem;
   background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
@@ -381,6 +544,7 @@ body {
       justify-content: flex-start;
       gap: 5.2rem;
     }
+
     &:nth-child(3) {
       justify-content: flex-start;
       padding-left: 29rem;
@@ -419,10 +583,12 @@ body {
     right: -8rem;
     padding-left: 6rem;
     white-space: nowrap;
+
     img {
       display: inline-block;
       padding-right: 2.4rem;
     }
+
     img:last-child {
       width: 30%;
       height: auto;
