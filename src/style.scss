@@ -10,6 +10,15 @@
   font-style: normal;
 }
 
+//mediaquery
+
+@media (min-width: 1440px) {
+  html { zoom: 0.85; }
+}
+
+@media (min-width: 1920px) {
+  html { zoom: 0.8; }
+}
 
 #notoserif {
   font-family: "Noto Serif KR";
@@ -21,7 +30,6 @@ body {
   overflow-x: hidden;
   font-family: 'Pretendard', sans-serif;
   background: linear-gradient(180deg, #FFFAC0 0%, #FFFDE3 21.55%);
-  //이거 빼야함
 }
 
 //text styles
@@ -468,7 +476,7 @@ body {
         font-size: 4rem;
         padding: 2.3rem 4.6rem;
         top: 40rem;
-        right: 90rem;
+        left: 20rem;
       }
       &:nth-child(3) {
         padding: 2.2rem 4.5rem;
