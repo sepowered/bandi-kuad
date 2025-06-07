@@ -238,28 +238,36 @@ body {
   .section-2__leaf {
     &:first-child {
       left: 0;
+
       svg {
         position: absolute;
         left: 8%;
+
         &:nth-child(1) {
         }
+
         &:nth-child(2) {
           top: 16rem;
         }
+
         &:nth-child(3) {
           top: 36rem;
         }
       }
     }
+
     &:last-child {
       svg {
         position: absolute;
         right: 8%;
+
         &:nth-child(1) {
         }
+
         &:nth-child(2) {
           top: 18rem;
         }
+
         &:nth-child(3) {
           top: 24rem;
         }
@@ -961,6 +969,118 @@ body {
   }
 }
 
+.section-17 {
+  padding: 16rem 0;
+  display: flex;
+  background: #FDFFF3;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    z-index: 3;
+  }
+
+  .section-17__radial {
+    position: absolute;
+    background: radial-gradient(55.88% 55.88% at 50% 55.88%, rgba(144, 207, 0, 0.35) 0%, rgba(238, 255, 199, 0.35) 100%);
+    filter: blur(190px);
+    border-radius: 50%;
+    &:first-child {
+      width: 82rem;
+      height: 50rem;
+      transform: rotate(90deg);
+      flex-shrink: 0;
+      left: -25%;
+    }
+    &:nth-child(2) {
+      width: 102rem;
+      height: 62rem;
+      transform: rotate(-90deg);
+      flex-shrink: 0;
+      top: 50%;
+      right: -25%;
+    }
+    &:nth-child(3) {
+      width: 106rem;
+      height: 64rem;
+      flex-shrink: 0;
+      bottom: -10%;
+      left: -25%;
+    }
+  }
+
+  .section-17__texts {
+    z-index: 3;
+    padding-bottom: 9rem;
+    .section-17__texts--title {
+      color: #483000;
+      text-align: center;
+      font-family: Pretendard;
+      font-size: 3rem;
+      font-weight: 600;
+      padding-bottom: 2.6rem;
+    }
+
+    .section-17__texts--subtitle {
+      color: #98BC00;
+      text-align: center;
+      font-family: "Wanted Sans";
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 3.8rem;
+    }
+
+    .section-17__texts--desc {
+      color: #483000;
+      text-align: center;
+      font-family: Pretendard;
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 2.625rem; /* 150% */
+    }
+  }
+  .section-17__mockups {
+    z-index: 3;
+    padding-top: 26rem;
+    display: flex;
+    //gap: 4rem;
+    .section-17__mockup {
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      .section-17__mockup--texts {
+          padding: 0 3rem;
+        .section-17__texts--title {
+          color: #483000;
+          font-family: Pretendard;
+          font-size: 3rem;
+          font-weight: 600;
+          padding-bottom: 2.6rem;
+        }
+
+        .section-17__texts--subtitle {
+          color: #98BC00;
+          font-family: "Wanted Sans";
+          font-size: 2rem;
+          font-weight: 700;
+          padding-bottom: 3.8rem;
+        }
+
+        .section-17__texts--desc {
+          color: #483000;
+          font-family: Pretendard;
+          font-size: 1.75rem;
+          font-weight: 400;
+          line-height: 2.625rem; /* 150% */
+        }
+      }
+    }
+  }
+}
+
 section.vertical {
   display: flex;
   padding: 8rem;
@@ -998,6 +1118,7 @@ section.vertical {
   padding: 7.4rem;
   font-size: 2rem;
   justify-content: space-between;
+  z-index: 3;
 
   .footer1 {
     font-weight: 600;
