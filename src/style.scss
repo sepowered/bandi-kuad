@@ -969,6 +969,70 @@ body {
   }
 }
 
+.section-16 {
+  background: #EDFFC2;
+  padding: 8.7rem 7.6rem 4.8rem 7.6rem;
+  position: relative;
+  height: 76rem;
+  .section-16box {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    .section-16__contents {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5.2rem;
+      justify-content: space-between;
+      .section-16__texts {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.8rem;
+        .section-16__text--main {
+          display: flex;
+          gap: 3.8rem;
+        }
+        .section-16__subtitle {
+          color: #8CC300;
+          font-family: "Wanted Sans";
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .section-16__title {
+          color: #483000;
+          font-family: Pretendard;
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 130%;
+        }
+        .section-16__desc {
+          color: #483000;
+          font-family: Pretendard;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 2.625rem; /* 175% */
+        }
+      }
+    }
+    .section-16__images {
+      display: flex;
+      padding-left: 3.8rem;
+      gap: 5.2rem;
+    }
+  }
+  .section-16__bgcover {
+    position: absolute;
+    width: calc(100% - 15.2rem);
+    height: 42.75rem;
+    background: rgba(250, 255, 235, 0.76);
+    bottom: 4.8rem;
+    border-radius: 5rem;
+    left: 7.6rem;
+    bottom: 4.8rem;
+  }
+}
+
+
 .section-17 {
   padding: 16rem 0;
   display: flex;
@@ -987,6 +1051,7 @@ body {
     background: radial-gradient(55.88% 55.88% at 50% 55.88%, rgba(144, 207, 0, 0.35) 0%, rgba(238, 255, 199, 0.35) 100%);
     filter: blur(190px);
     border-radius: 50%;
+
     &:first-child {
       width: 82rem;
       height: 50rem;
@@ -994,6 +1059,7 @@ body {
       flex-shrink: 0;
       left: -25%;
     }
+
     &:nth-child(2) {
       width: 102rem;
       height: 62rem;
@@ -1002,6 +1068,7 @@ body {
       top: 50%;
       right: -25%;
     }
+
     &:nth-child(3) {
       width: 106rem;
       height: 64rem;
@@ -1014,6 +1081,7 @@ body {
   .section-17__texts {
     z-index: 3;
     padding-bottom: 9rem;
+
     .section-17__texts--title {
       color: #483000;
       text-align: center;
@@ -1041,6 +1109,7 @@ body {
       line-height: 2.625rem; /* 150% */
     }
   }
+
   .section-17__mockups {
     z-index: 3;
     padding-top: 26rem;
@@ -1051,8 +1120,10 @@ body {
       display: flex;
       flex-direction: column;
       gap: 4rem;
+
       .section-17__mockup--texts {
-          padding: 0 3rem;
+        padding: 0 3rem;
+
         .section-17__texts--title {
           color: #483000;
           font-family: Pretendard;
