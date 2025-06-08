@@ -972,6 +972,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24rem;
+    z-index: 2;
+    position: relative;
 
     &:nth-child(2) {
       justify-content: flex-start;
@@ -1127,6 +1129,35 @@ body {
   }
 */
 
+  .section-15__radial {
+    border-radius: 50%;
+    background: radial-gradient(55.88% 55.88% at 50% 55.88%, rgba(99, 142, 0, 0.60) 0%, rgba(238, 255, 199, 0.00) 100%);
+    filter: blur(190px);
+    position: absolute;
+    z-index: 0;
+
+
+  }
+  .section-15__radial1{
+    width: 102rem;
+    height: 66rem;
+    top: -32rem;
+    left: 25%;
+  }
+  .section-15__radial2 {
+    width: 82rem;
+    height: 74rem;
+    transform: rotate(-90deg);
+    top: 25%;
+    right: -20%;
+  }
+  .section-15__radial3 {
+    width: 82rem;
+    height: 74rem;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -20%;
+  }
 }
 
 .section-16 {
