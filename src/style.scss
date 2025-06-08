@@ -964,6 +964,7 @@ body {
 
 .section-15 {
   padding: 14rem 0 0 14rem;
+  overflow-x: hidden;
   background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
 
   .section-15__area {
@@ -978,9 +979,9 @@ body {
 
     &:nth-child(3) {
       justify-content: flex-end;
-      //align-items: flex-end;
       gap: 4rem;
-      //padding-left: 29rem;
+      position: relative;
+      right: -7.75rem;
 
       .section-15__mockups-4 {
         display: flex;
@@ -1086,7 +1087,7 @@ body {
   }
 
   //for stepchip line
-
+  /*
   .section-15__stepchip {
     position: relative;
     z-index: 2;
@@ -1113,6 +1114,7 @@ body {
   .section-15__mockups61:last-child .section-15__stepchip::after {
     display: none;
   }
+*/
 
 }
 
@@ -1415,4 +1417,39 @@ section.vertical {
     border-radius: 50%;
   }
 
+}
+
+
+//dash test
+.section-15__mockups-6 {
+  position: relative !important;
+}
+
+.section-15__stepchip {
+  position: relative !important;
+  z-index: 2 !important;
+
+  &::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 100% !important;
+    width: 25vw !important;
+    height: 2px !important;
+    background: repeating-linear-gradient(
+                    to right,
+                    #A8DA28 0px,
+                    #A8DA28 8px,
+                    transparent 8px,
+                    transparent 16px
+    ) !important;
+    transform: translateY(-50%) !important;
+    z-index: -1 !important;
+  }
+
+  .section-15__mockups61:last-child & {
+    &::after {
+      display: none !important;
+    }
+  }
 }

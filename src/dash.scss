@@ -1,0 +1,229 @@
+.section-15 {
+  padding: 14rem 0 0 14rem;
+  background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
+
+  .section-15__area {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24rem;
+
+    &:nth-child(2) {
+      justify-content: flex-start;
+      gap: 5.2rem;
+    }
+
+    &:nth-child(3) {
+      justify-content: flex-end;
+      gap: 4rem;
+
+      .section-15__mockups-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .section-15__mockups-5 {
+        display: flex;
+        gap: 4rem;
+      }
+    }
+
+    &:nth-child(4) {
+      display: flex;
+      flex-direction: column;
+      padding-right: 14rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .section-15__texts {
+    .section-15__subtitle {
+      color: #A8DA28;
+      font-family: "Wanted Sans";
+      font-size: 2rem;
+      font-weight: 700;
+      padding-bottom: 4rem;
+    }
+
+    .section-15__title {
+      color: #FDFFF3;
+      font-family: Pretendard;
+      font-size: 3rem;
+      font-weight: 600;
+      padding-bottom: 4rem;
+      line-height: 140%;
+    }
+
+    .section-15__desc {
+      color: #FDFFF3;
+      font-family: Pretendard;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 160%;
+    }
+
+    .section-15__text {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .section-15__stepchip {
+    border-radius: 1rem;
+    background: #A8DA28;
+    box-shadow: 0px 0px 5.04px 0px #A8DA28;
+    padding: .4rem 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 0.875rem;
+    font-weight: 600;
+    width: 3rem;
+    position: relative; // 점선을 위해 추가
+    z-index: 2; // 점선 위에 표시
+
+    // 각 STEP 칩에서 다음 칩까지 점선 연결
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 0.5rem);
+      width: calc(100% + 2rem);
+      height: 2px;
+      background: repeating-linear-gradient(
+                      to right,
+                      #A8DA28 0px,
+                      #A8DA28 8px,
+                      transparent 8px,
+                      transparent 16px
+      );
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+
+  .section-15__mockups-1 {
+    position: relative;
+    right: -8rem;
+    padding-left: 6rem;
+    white-space: nowrap;
+
+    img {
+      display: inline-block;
+      padding-right: 2.4rem;
+
+      &:last-child {
+        width: 30%;
+        height: auto;
+      }
+    }
+  }
+
+  .section-15__mockups-3 {
+    position: relative;
+    right: 0;
+
+    img {
+      padding-right: 3.4rem;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+
+  .section-15__mockups-6 {
+    display: flex;
+    justify-content: space-between;
+    position: relative; // 점선을 위해 추가
+
+    .section-15__mockups61 {
+      display: flex;
+      flex-direction: column;
+      gap: 3.8rem;
+      align-items: center;
+      flex: 1; // 동일한 너비로 분할
+      position: relative; // 점선을 위해 추가
+
+      // 마지막 STEP에는 점선 제거
+      &:last-child {
+        .section-15__stepchip::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// 🎯 대안 방법: 배경 점선 버전 (더 안전)
+// 위의 ::after 방식이 문제가 있다면 이 방법을 사용하세요
+/*
+.section-15 {
+  .section-15__mockups-6 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    // 전체 배경에 점선 깔기
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1.9rem;  // stepchip 중앙 높이
+      left: 5rem;   // 첫 번째 칩 끝
+      right: 5rem;  // 마지막 칩 시작
+      height: 2px;
+      background: repeating-linear-gradient(
+        to right,
+        #A8DA28 0px,
+        #A8DA28 8px,
+        transparent 8px,
+        transparent 16px
+      );
+      z-index: 1;
+    }
+
+    .section-15__mockups61 {
+      display: flex;
+      flex-direction: column;
+      gap: 3.8rem;
+      align-items: center;
+    }
+  }
+
+  .section-15__stepchip {
+    // 기존 스타일들...
+    position: relative;
+    z-index: 2; // 점선 위에 표시
+
+    // ::after 제거
+  }
+}
+*/
+
+// 🔧 반응형 점선 조정
+@media (max-width: 768px) {
+  .section-15 {
+    .section-15__stepchip {
+      &::after {
+        width: calc(80% + 1rem); // 모바일에서 점선 길이 조정
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-15 {
+    .section-15__stepchip {
+      &::after {
+        width: calc(60% + 0.5rem); // 더 작은 화면에서 점선 길이 조정
+        background: repeating-linear-gradient(
+                        to right,
+                        #A8DA28 0px,
+                        #A8DA28 6px,
+                        transparent 6px,
+                        transparent 12px
+        ); // 더 작은 점선 패턴
+      }
+    }
+  }
+}
