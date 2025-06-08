@@ -977,8 +977,27 @@ body {
     }
 
     &:nth-child(3) {
-      justify-content: flex-start;
-      padding-left: 29rem;
+      justify-content: flex-end;
+      //align-items: flex-end;
+      gap: 4rem;
+      //padding-left: 29rem;
+
+      .section-15__mockups-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .section-15__mockups-5 {
+        display: flex;
+        gap: 4rem;
+      }
+    }
+    &:nth-child(4) {
+      display: flex;
+      flex-direction: column;
+      padding-right: 14rem;
+      padding-bottom: 0;
     }
   }
 
@@ -1007,6 +1026,23 @@ body {
       font-weight: 400;
       line-height: 160%;
     }
+    .section-15__text {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .section-15__stepchip {
+    border-radius: 1rem;
+    background: #A8DA28;
+    box-shadow: 0px 0px 5.04px 0px #A8DA28;
+    padding: .4rem 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 0.875rem;
+    font-weight: 600;
+    width: 3rem;
   }
 
   .section-15__mockups-1 {
@@ -1027,8 +1063,8 @@ body {
   }
 
   .section-15__mockups-3 {
-    position: absolute;
-    right: -7.75rem;
+    position: relative;
+    right: 0;
     img {
       padding-right: 3.4rem;
       &:last-child {
@@ -1036,7 +1072,48 @@ body {
       }
     }
     //7.75rem
+
   }
+  .section-15__mockups-6 {
+    display: flex;
+    justify-content: space-between;
+    .section-15__mockups61 {
+      display: flex;
+      flex-direction: column;
+      gap: 3.8rem;
+      align-items: center;
+    }
+  }
+
+  //for stepchip line
+
+  .section-15__stepchip {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-15__stepchip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: calc(25vw - 8rem);
+    height: 2px;
+    background: repeating-linear-gradient(
+                    to right,
+                    #A8DA28 0px,
+                    #A8DA28 8px,
+                    transparent 8px,
+                    transparent 16px
+    );
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .section-15__mockups61:last-child .section-15__stepchip::after {
+    display: none;
+  }
+
 }
 
 .section-16 {
