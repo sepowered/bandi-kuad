@@ -963,6 +963,7 @@ body {
 }
 
 .section-15 {
+  position: relative;
   padding: 14rem 0 0 14rem;
   overflow-x: hidden;
   background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
@@ -1084,6 +1085,16 @@ body {
       gap: 3.8rem;
       align-items: center;
     }
+  }
+
+
+  .section-15__gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    border-radius: 0rem 0rem 0.4375rem 0rem;
+    background: linear-gradient(180deg, rgba(164, 197, 82, 0.00) 0%, #BAE159 100%);
   }
 
   //for stepchip line
@@ -1301,6 +1312,13 @@ body {
   }
 }
 
+.section-18 {
+  width: 100%;
+  height: fit-content;
+  background: url('../src/img/section-18.png') center/cover no-repeat;
+  aspect-ratio: 120 / 58.5;
+}
+
 section.vertical {
   display: flex;
   padding: 8rem;
@@ -1403,6 +1421,22 @@ section.vertical {
         .footer__member--name {
           font-size: 1.5rem;
         }
+      }
+    }
+
+    a {
+      display: flex;
+      color: rgba(255,255,255,0.9);
+      gap: 1rem;
+      padding: .75rem;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 1rem;
+      text-decoration: none;
+      align-items: center;
+      width: fit-content;
+      font-size: 1.25rem;
+      svg {
+        fill: rgba(255,255,255,0.9);
       }
     }
   }
