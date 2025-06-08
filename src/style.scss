@@ -1027,8 +1027,14 @@ body {
   }
 
   .section-15__mockups-3 {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: -7.75rem;
+    img {
+      padding-right: 3.4rem;
+      &:last-child {
+        padding: 0;
+      }
+    }
     //7.75rem
   }
 }
