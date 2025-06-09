@@ -1350,6 +1350,70 @@ body {
   aspect-ratio: 120 / 58.5;
 }
 
+.section-19 {
+  padding: 34rem 7.5rem 20rem 7.5rem;
+  background: #F1FFCF;
+  position: relative;
+  //height: 112rem;
+  .section-19__title {
+    display: flex;
+    position: absolute;
+    top: 17rem;
+    left: 15rem;
+    span {
+      color: #483000;
+      font-family: Pretendard;
+      font-size: 5.6rem;
+      font-weight: 600;
+      padding-top: 1rem;
+      padding-left: 2.3rem;
+    }
+    img {
+      display: block;
+      transform: rotate(-9.5deg);
+      width: 20rem;
+
+    }
+  }
+.section-19__video {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-radius: 6rem;
+  iframe {
+    flex: 1;
+    border-radius: 6rem;
+  }
+}
+
+  #section19seat {
+    position: absolute;
+    transform: rotate(14deg);
+    bottom: 4.4rem;
+    right: 5.2rem;
+    z-index: 2;
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    &:nth-of-type(1) {
+      left: 0;
+      z-index: 2;
+    }
+    &:nth-of-type(2) {
+      left: 2rem;
+    }
+    &:nth-of-type(3) {
+      right: 2rem;
+    }
+    &:nth-of-type(4) {
+      right: 0rem;
+
+    }
+  }
+}
+
 section.vertical {
   display: flex;
   padding: 8rem;
