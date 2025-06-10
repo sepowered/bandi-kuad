@@ -1544,6 +1544,10 @@ section.vertical {
     height: 4rem;
     background: #D0F475;
     border-radius: 50%;
+    &:hover {
+      opacity: 0.7;
+      transition: .3s ease-in-out;
+    }
   }
 
 }
