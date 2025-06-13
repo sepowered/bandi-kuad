@@ -74,9 +74,26 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   position: relative;
+
+  .section-1__fallbackbg {
+    aspect-ratio: 1920 / 1126;
+    width: 100%;
+    height: auto;
+    background: url('../src/img/section-1-fallback2.png') no-repeat center center / cover;
+  }
+
+  .section-1__fallbackbg3 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 1920 / 1126;
+    width: 100%;
+    height: auto;
+    background: url('../src/img/section-1-fallback3.png') no-repeat center center / cover;
+    z-index: 9999;
+  }
 
   .section-1__header {
     text-align: center;
@@ -966,7 +983,7 @@ body {
   position: relative;
   padding: 14rem 0 0 14rem;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #393D2F 80%, #3C4130 83.06%, #414732 88.2%, #BAE159 100%);
+  background: #393D2F;
 
   .section-15__area {
     display: flex;
@@ -1078,16 +1095,6 @@ body {
     //7.75rem
 
   }
-  .section-15__mockups-6 {
-    display: flex;
-    justify-content: space-between;
-    .section-15__mockups61 {
-      display: flex;
-      flex-direction: column;
-      gap: 3.8rem;
-      align-items: center;
-    }
-  }
 
 
   .section-15__gradient {
@@ -1157,6 +1164,24 @@ body {
     transform: rotate(-90deg);
     top: 50%;
     left: -20%;
+  }
+}
+
+.section-14 {
+  bottom: 0;
+  aspect-ratio: 1920 / 760;
+  width: 100%;
+  height: auto;
+  background: url('../src/img/section-15-6-fallback.png') no-repeat center center / cover;
+  border: none;
+
+  .section-15__gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    border-radius: 0rem 0rem 0.4375rem 0rem;
+    background: linear-gradient(180deg, rgba(164, 197, 82, 0.00) 0%, #BAE159 100%);
   }
 }
 
@@ -1375,16 +1400,16 @@ body {
 
     }
   }
-.section-19__video {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  border-radius: 6rem;
-  iframe {
-    flex: 1;
+  .section-19__video {
+    display: flex;
+    justify-content: center;
+    background-color: black;
     border-radius: 6rem;
+    iframe {
+      flex: 1;
+      border-radius: 6rem;
+    }
   }
-}
 
   #section19seat {
     position: absolute;
