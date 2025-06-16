@@ -1405,7 +1405,7 @@ body {
     justify-content: center;
     background-color: black;
     border-radius: 6rem;
-    video {
+    iframe {
       flex: 1;
       border-radius: 6rem;
     }
@@ -1610,4 +1610,3 @@ section.vertical {
       display: none !important;
     }
   }
-}
